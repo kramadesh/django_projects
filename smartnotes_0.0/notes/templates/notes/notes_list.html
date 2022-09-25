@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>All Notes</title>
+    </head>
+    <body>
+        <h1>Welcome to SmartNotes!</h1>
+        <p>Today is {{ today }}</p>
+
+        <ul>
+            {% for note in notes %}
+                <li>{{ note.title }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
